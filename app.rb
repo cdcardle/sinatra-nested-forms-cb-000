@@ -8,7 +8,7 @@ module FormsLab
     end
 
     post '/pirates' do
-      puts params
+      @pirate = params[pirate]
       erb :"pirates/show"
     end
 
