@@ -6,9 +6,9 @@
 
 
 <h2>Ships:<br>
-  @ships.each do
-    <p>Name: <%= @ship.name %></p>
-    <p>Type: <%= @ship.type %></p>
-    <p>Booty: <%= @ship.booty %></p>
-  end
+  <% @ships.each do %>
+    <p>Name: <%= ship.name %></p>
+    <p>Type: <%= ship.type %></p>
+    <p>Booty: <%= ship.booty %></p>
+  <% end %>
 </h2>
