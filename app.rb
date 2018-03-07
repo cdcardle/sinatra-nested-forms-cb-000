@@ -23,3 +23,6 @@ module FormsLab
 
   end
 end
+
+[{"name"=>"S.S. Lame-O", "type"=>"rowboat", "booty"=>"nothing"},
+  {"name"=>"Pipsqueak", "type"=>"canoe", "booty"=>"one oar"}]
