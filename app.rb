@@ -12,9 +12,9 @@ module FormsLab
     end
 
     post '/pirates' do
-      pirate_info = params[:pirate]
-      @pirate = Pirate.new(pirate_info[name], pirate_info[weight], pirate_info[height])
-      @ships = pirate[ships]
+      pirate = params[:pirate]
+      @pirate = Pirate.new(pirate[:name], pirate[:weight], pirate[:height])
+      @ships = pirate[:ships]
 
       erb :"pirates/show"
     end
