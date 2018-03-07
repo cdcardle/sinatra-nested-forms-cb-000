@@ -12,9 +12,8 @@ module FormsLab
     end
 
     post '/pirates' do
-      pirate = params[:pirate]
       @pirate = Pirate.new(pirate[:pirate])
-      pirate[:ships].collect do |ship|
+      params[:pirate][:ships].collect do |ship|
         Ship.new(ship)
       end
       @ships = Ship.all
