@@ -1,19 +1,22 @@
-<h1>
-  <form action="/pirates" method="POST">
-    <h6>
-      <ul style="text-decoration: underline;">Pirate Info:</ul><br>
-      <label>Name: <input type="text" name="pirate[name]"><br>
-      <label>Weight: <input type="number" name="pirate[weight]"> pounds<br>
-      <label>Height: <input type="number" name="pirate[height]"> inches<br><br>
-      <ul style="text-decoration: underline;">Ship Info:</ul><br>
-      <label>Name: <input type="text" name="pirate[ships][][name]" id="ship_name_1"><br>
-      <label>Type: <input type="text" name="pirate[ships][][type]"><br>
-      <label>Booty: <input type="text" name="pirate[ships][][booty]"><br><br>
-      <label>Name: <input type="text" name="pirate[ships][][name]"><br>
-      <label>Type: <input type="text" name="pirate[ships][][type]"><br>
-      <label>Booty: <input type="text" name="pirate[ships][][booty]">
+<!DOCTYPE html>
+<html>
+  <h1>
+    <form action="/pirates" method="POST">
+      <h6>
+        <ul style="text-decoration: underline;">Pirate Info:</ul><br>
+        <label>Name: <input type="text" name="pirate[name]"><br>
+        <label>Weight: <input type="number" name="pirate[weight]"> pounds<br>
+        <label>Height: <input type="number" name="pirate[height]"> inches<br><br>
+        <ul style="text-decoration: underline;">Ship Info:</ul><br>
+        <label>Name: <input type="text" name="pirate[ships][][name]" id="ship_name_1"><br>
+        <label>Type: <input type="text" name="pirate[ships][][type]"><br>
+        <label>Booty: <input type="text" name="pirate[ships][][booty]"><br><br>
+        <label>Name: <input type="text" name="pirate[ships][][name]"><br>
+        <label>Type: <input type="text" name="pirate[ships][][type]"><br>
+        <label>Booty: <input type="text" name="pirate[ships][][booty]">
 
-      <input type="submit" id="submit">
-    </h6>
-  </form>
-</h1>
+        <input type="submit" id="submit">
+      </h6>
+    </form>
+  </h1>
+</html>
